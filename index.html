@@ -1,0 +1,58 @@
+<!--
+Danny Abou-Chakra
+Danny_AbouChakra@student.uml.edu
+Danny Abou-Chakra Umass Lowell CS student, Copyright (c)
+12/8/2019
+html file for multiplication table
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplier Table</title>
+    <link rel="stylesheet" href="css/multi.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+  <body class = "container mt-5 mb-5">
+    <div class = "row">
+      <div id = "body " class = "col-lg-6">
+        <!-- forms and sliders -->
+        <form id="formInputs">
+            <div>
+            Enter horizontal axis bounding numbers. Order does not matter. <br>
+            <input name = "firstInput" type="text" id="horz1" class="form-control col-3 mt-3 mb-3" >
+            <div id = "slider-1" class = "sliders"></div>
+            <br>
+            <input name = "secondInput" type="text" id="horz2" class="form-control col-3" ><br>
+            <div id = "slider-2" class = "sliders"></div>
+            <br>Enter vertical axis bounding numbers. Order does not matter. <br>
+            <input name = "thirdInput" type="text" id="vert1" class="form-control col-3 mt-3 mb-3" >
+            <div id = "slider-3" class = "sliders"></div> <br>
+            <input name = "fourthInput" type="text" id="vert2" class="form-control col-3"> <br>
+            <div id = "slider-4" class = "sliders"></div><br>
+            <button id = "saveButton" type="button" class="btn btn-primary mt-5">Save</button>
+          </div>      
+        </form>
+        <label>Index No of Tab to be Removed (zero based):</label>
+        <input for="indexValue" id="indexValue"><p> 
+        <button type="button" id="removeTabs">Remove!</button>
+        <button type="button" id="removeAllTabs">Remove All</button>
+      </div> 
+      <!-- tab contents -->
+      <div id= "tabContainer" class = "col-lg-6">
+          <div id="tabs">
+              <ul id = "listOfTabs">
+          </div> 
+      </div>
+    </div>
+    <!-- multiplication table -->
+    <div id= "div1" class="mb-5"></div> 
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"
+      integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="
+      crossorigin="anonymous"></script>
+    <script src="js/multiplier.js"></script>
+  </body>
+</html>

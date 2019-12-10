@@ -1,0 +1,46 @@
+/**
+Danny Abou-Chakra
+Danny_AbouChakra@student.uml.edu
+Danny Abou-Chakra Umass Lowell CS student, Copyright (c)
+11/30/2019
+css styling
+**/
+#vertical{ 
+    padding-top: 20px;
+}
+
+#multiplicationTable { 
+    text-align: center;
+    padding-right: 70px;   
+}
+
+#div1{
+	padding-top: 20px;
+	float: right;
+	height: 60%;
+	width: 100%;
+	overflow: auto;
+}
+tr:nth-child(2n+1) td:nth-child(2n+1){
+	background-color: blue;
+}
+tr:nth-child(2n) td:nth-child(2n){
+	background-color: blue;
+}
+
+td { 
+    border: 1px solid black;
+	padding: 1px;
+	
+}
+
+#multiplicand, #multiplier td { 
+    background-color: #000!important; 
+    color: white;
+    font-weight: bold; 
+}
+
+.error { 
+	color: red;
+	font-weight: bold;
+}
